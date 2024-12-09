@@ -1,186 +1,4 @@
-export const stockData = [
-    {
-      id: '001',
-      name: 'Item A',
-      quantity: 50,
-      expiryDate: '2024-12-31',
-      salePrice: 15.99,
-      rackLocation: 'A1',
-      createdAt: '2023-01-15',
-      createdBy: 'User1',
-      updatedAt: '2023-10-01',
-      updatedBy: 'User2',
-    },
-    {
-      id: '002',
-      name: 'Item B',
-      quantity: 30,
-      expiryDate: '2024-06-15',
-      salePrice: 20.49,
-      rackLocation: 'B3',
-      createdAt: '2023-02-20',
-      createdBy: 'User3',
-      updatedAt: '2023-09-20',
-      updatedBy: 'User4',
-    },
-    {
-      id: '003',
-      name: 'Item C',
-      quantity: 100,
-      expiryDate: '2025-01-01',
-      salePrice: 10.00,
-      rackLocation: 'C2',
-      createdAt: '2023-03-10',
-      createdBy: 'User1',
-      updatedAt: '2023-10-10',
-      updatedBy: 'User3',
-    },
-    {
-      id: '004',
-      name: 'Item D',
-      quantity: 75,
-      expiryDate: '2024-08-20',
-      salePrice: 12.50,
-      rackLocation: 'D4',
-      createdAt: '2023-04-05',
-      createdBy: 'User2',
-      updatedAt: '2023-09-25',
-      updatedBy: 'User1',
-    },
-    {
-      id: '005',
-      name: 'Item E',
-      quantity: 20,
-      expiryDate: '2024-11-30',
-      salePrice: 22.00,
-      rackLocation: 'E1',
-      createdAt: '2023-05-15',
-      createdBy: 'User4',
-      updatedAt: '2023-08-15',
-      updatedBy: 'User2',
-    },
-    {
-      id: '006',
-      name: 'Item F',
-      quantity: 150,
-      expiryDate: '2025-03-15',
-      salePrice: 7.25,
-      rackLocation: 'F3',
-      createdAt: '2023-06-25',
-      createdBy: 'User3',
-      updatedAt: '2023-10-05',
-      updatedBy: 'User1',
-    },
-    {
-      id: '007',
-      name: 'Item G',
-      quantity: 60,
-      expiryDate: '2024-07-01',
-      salePrice: 19.99,
-      rackLocation: 'G2',
-      createdAt: '2023-07-10',
-      createdBy: 'User2',
-      updatedAt: '2023-09-30',
-      updatedBy: 'User4',
-    },
-    {
-      id: '008',
-      name: 'Item H',
-      quantity: 10,
-      expiryDate: '2024-05-15',
-      salePrice: 25.00,
-      rackLocation: 'H5',
-      createdAt: '2023-08-20',
-      createdBy: 'User1',
-      updatedAt: '2023-10-15',
-      updatedBy: 'User3',
-    },
-    {
-      id: '009',
-      name: 'Item I',
-      quantity: 45,
-      expiryDate: '2024-09-10',
-      salePrice: 18.75,
-      rackLocation: 'I6',
-      createdAt: '2023-09-05',
-      createdBy: 'User4',
-      updatedAt: '2023-10-18',
-      updatedBy: 'User2',
-    },
-    {
-      id: '010',
-      name: 'Item J',
-      quantity: 80,
-      expiryDate: '2025-02-28',
-      salePrice: 14.30,
-      rackLocation: 'J7',
-      createdAt: '2023-10-01',
-      createdBy: 'User3',
-      updatedAt: '2023-10-20',
-      updatedBy: 'User1',
-    },
-    // Additional items
-    {
-      id: '011',
-      name: 'Item K',
-      quantity: 25,
-      expiryDate: '2024-12-01',
-      salePrice: 30.00,
-      rackLocation: 'K1',
-      createdAt: '2023-11-01',
-      createdBy: 'User2',
-      updatedAt: '2023-11-10',
-      updatedBy: 'User3',
-    },
-    {
-      id: '012',
-      name: 'Item L',
-      quantity: 90,
-      expiryDate: '2025-05-30',
-      salePrice: 5.50,
-      rackLocation: 'L2',
-      createdAt: '2023-11-15',
-      createdBy: 'User1',
-      updatedAt: '2023-11-20',
-      updatedBy: 'User4',
-    },
-    {
-      id: '013',
-      name: 'Item M',
-      quantity: 35,
-      expiryDate: '2024-08-15',
-      salePrice: 18.00,
-      rackLocation: 'M3',
-      createdAt: '2023-12-01',
-      createdBy: 'User4',
-      updatedAt: '2023-12-05',
-      updatedBy: 'User2',
-    },
-    {
-      id: '014',
-      name: 'Item N',
-      quantity: 55,
-      expiryDate: '2025-03-01',
-      salePrice: 12.75,
-      rackLocation: 'N4',
-      createdAt: '2023-12-10',
-      createdBy: 'User3',
-      updatedAt: '2023-12-15',
-      updatedBy: 'User1',
-    },
-    {
-      id: '015',
-      name: 'Item O',
-      quantity: 75,
-      expiryDate: '2024-06-10',
-      salePrice: 9.99,
-      rackLocation: 'O5',
-      createdAt: '2023-12-20',
-      createdBy: 'User2',
-      updatedAt: '2023-12-25',
-      updatedBy: 'User3',
-    },
-  ];
+
   
    export const recentOrders = [
     { orderDate: '2024-03-01', medicineName: 'Paracetamol', category: 'Pain Reliever', strength: '500mg', expiryDate: '2025-12-31', quantity: 2, salePrice: '₹50.00' },
@@ -209,7 +27,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: false,
       RtoNumber: "UP32AB1234",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 1500, // New field for user wallet balance
     },
     {
@@ -219,7 +37,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: true,
       RtoNumber: "DL01XY4567",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 1200, // New field for user wallet balance
     },
     {
@@ -229,7 +47,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: true,
       RtoNumber: "MH12JK7890",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 1800, // New field for user wallet balance
     },
     {
@@ -239,7 +57,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: false,
       RtoNumber: "KA03LM2345",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 800, // New field for user wallet balance
     },
     {
@@ -249,7 +67,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: false,
       RtoNumber: "TN10PO9876",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 950, // New field for user wallet balance
     },
     {
@@ -259,7 +77,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: false,
       RtoNumber: "UP32AB1234",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 1500, // New field for user wallet balance
     },
     {
@@ -269,7 +87,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: true,
       RtoNumber: "DL01XY4567",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 1200, // New field for user wallet balance
     },
     {
@@ -279,7 +97,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: true,
       RtoNumber: "MH12JK7890",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 1800, // New field for user wallet balance
     },
     {
@@ -289,7 +107,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: false,
       RtoNumber: "KA03LM2345",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 800, // New field for user wallet balance
     },
     {
@@ -299,7 +117,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: false,
       RtoNumber: "TN10PO9876",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 950, // New field for user wallet balance
     },
     // Adding one more user with wallet details
@@ -310,7 +128,7 @@ export const stockData = [
       moneyReceived: true,
       updateToWallet: true,
       RtoNumber: "GJ12AB4567",
-      screenshotUrl: "https://forumstatic.oneplusmobile.com/opforum-gl/upload/image/front/thread/20220615/7956362/1089258415668592646/1089258415668592646.jpg",
+      screenshotUrl: "https://storage.googleapis.com/support-forums-api/attachment/thread-222109884-12757004031274789691.jpg",
       userWallet: 2200, // New field for user wallet balance
     }
   ];
@@ -339,3 +157,7 @@ export const stockData = [
   { id: 19, name: 'Mia Adams', rtoNumber: 'RTO141', mobileNumber: '555-789-0123' },
   { id: 20, name: 'Ethan Carter', rtoNumber: 'RTO142', mobileNumber: '555-890-1234' }
 ];
+
+
+
+export const tokenvalue = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzIxMzU2NDUsImlzcyI6ImV4YW1wbGUtaXNzdWVyIiwiZXhwIjoxNzMyNzQwNDQ1LCJpZCI6IkxpdWtVSFp4eEJtU3pETHhoN0VzIiwicnRvIjoicnRvX25vIiwibmFtZSI6IlRlc3RVc2VyIiwicGhvbmUiOiI5ODc0NTYzMjEwIiwicGFzc3dvcmQiOiJNeVBhc3N3b3JkIn0.8Uc2keKnPGMTNbVlJbxxRAjQmMIYmT56kvfIdJsFhYo';

@@ -11,12 +11,14 @@ import Login from './auth/login';
 import Dashboard from './components/dasboard';
 import { Userprofile } from './components/Userprofile';
 import Moneytransfer from './components/Moneytransfer';
-import OnlinePuc from './components/FormDetails/online-puc';
+import OnlinePuc from './components/FormDetails/OnlinePuc/online-puc';
 import Renewalsld from './components/FormDetails/renewal-sld';
 import Offlinecourtchalan from './components/FormDetails/offline-court-chalan';
 import LearningTest from './components/FormDetails/LTForm/learning-test';
 import Services from './components/Home';
 import UserLTForm from './components/FormDetails/LTForm/UserLTForm';
+import UserOnlinePucForm from './components/FormDetails/OnlinePuc/UserOnlinePucForm';
+import RegisteredUserPage from './components/RegisteredUserPage';
 
 function App() {
   return (
@@ -34,10 +36,12 @@ function App() {
             <Route path="user-profile" element={<Userprofile />} />
             <Route path="sendmoney" element={<Moneytransfer />} />
             <Route path="online-puc" element={<OnlinePuc />} />
+            <Route path="online-puc/UserOnlinePucForm" element={<UserOnlinePucForm />} />
             <Route path="learning-test" element={<LearningTest />} />
-            <Route path="learning-test/UserLTForm" element={<UserLTForm />} />
+            <Route path="learning-test/UserLTForm/:id" element={<UserLTForm />} />
             <Route path="renewal-sld" element={<Renewalsld />} />
             <Route path="offline-court-chalan" element={<Offlinecourtchalan />} />
+            <Route path="registered-users" element={<RegisteredUserPage />} />
             <Route path="" element={<Dashboard />} />
             <Route path="products" element={<Product />} />
            

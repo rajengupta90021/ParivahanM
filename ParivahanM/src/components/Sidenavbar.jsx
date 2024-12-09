@@ -124,6 +124,7 @@ export default function Sidenavbar() {
   };
 
   const handleLogout = () => {
+    localStorage.removeItem('authToken');
     localStorage.removeItem("userlogin");
     navigate("/login");
   };

@@ -41,7 +41,7 @@ export const Userprofile = () => {
                         
                         <img src="/images/parivahan.png" alt="Logo" style={{ height: 200, marginBottom: '16px' }} />
                         <Typography variant="h5" component="div" sx={{ mb: 2, fontWeight: 'bold', fontFamily: 'Poppins, sans-serif' }}>
-                            BALAJIMOTERS
+                            ParivahanM
                         </Typography>
                     </Box>
 

@@ -15,11 +15,9 @@ const Services = () => {
     } else if (serviceName === "Learning Test") {
       navigate("/dashboard/learning-test");
     } else if (serviceName === "Renewal SLD") {
-      showSnackbar("currently  Renewal SLD servie is not avilabe ")
-      // navigate("/dashboard/renewal-sld");
+      showSnackbar("currently  Renewal SLD servie is not avilabe ");
     } else if (serviceName === "Offline Court Chalan") {
-      showSnackbar("currently Offline Court Chalan servie is not avilabe ")
-      // navigate("/dashboard/offline-court-chalan");
+      showSnackbar("currently Offline Court Chalan servie is not avilabe ");
     }
   };
 
@@ -27,8 +25,7 @@ const Services = () => {
     <>
       <div style={{ padding: '20px', backgroundColor: '#f1f5f9', minHeight: '82vh' }}>
         {/* Main Title */}
-       {/* Center the Images component */}
-       <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', marginBottom: '40px' }}>
           <Images />  {/* Assuming this is an image or logo component */}
         </Box>
         <Typography
@@ -55,8 +52,8 @@ const Services = () => {
                 textAlign: 'center',
                 borderRadius: '12px',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-                backgroundColor: '#4caf50',
-                color: 'white',
+                border: '4px solid #4caf50',  // Green border
+                color: 'black',
                 height: '280px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -65,18 +62,18 @@ const Services = () => {
                 '&:hover': {
                   boxShadow: '0 8px 30px rgba(0, 0, 0, 0.2)',
                   transform: 'translateY(-8px)',
-                  cursor:'pointer'
+                  cursor: 'pointer',
                 },
               }}
               onClick={() => handleServiceClick("Online PUC")}
             >
-              <IconButton sx={{ color: 'white', fontSize: '40px', marginBottom: '20px' }}>
+              <IconButton sx={{ color: 'black', fontSize: '40px', marginBottom: '20px' }}>
                 <School />
               </IconButton>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px', color: 'black' }}>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px' }}>
                 Online PUC
               </Typography>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", color: 'white' }} variant="body2">User Submitted: 465</Typography>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif" }} variant="body2">User Submitted: 465</Typography>
             </Paper>
           </Grid>
 
@@ -88,8 +85,8 @@ const Services = () => {
                 textAlign: 'center',
                 borderRadius: '12px',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-                backgroundColor: '#1976d2',
-                color: 'white',
+                border: '4px solid #1976d2',  // Blue border
+                color: 'black',
                 height: '280px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -98,18 +95,18 @@ const Services = () => {
                 '&:hover': {
                   boxShadow: '0 8px 30px rgba(0, 0, 0, 0.2)',
                   transform: 'translateY(-8px)',
-                   cursor:'pointer'
+                  cursor: 'pointer',
                 },
               }}
               onClick={() => handleServiceClick("Learning Test")}
             >
-              <IconButton sx={{ color: 'white', fontSize: '40px', marginBottom: '20px' }}>
+              <IconButton sx={{ color: 'black', fontSize: '40px', marginBottom: '20px' }}>
                 <Settings />
               </IconButton>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px', color: 'black' }}>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px' }}>
                 Learning Test
               </Typography>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", color: 'white' }} variant="body2">User Submitted: 465</Typography>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif" }} variant="body2">User Submitted: 465</Typography>
             </Paper>
           </Grid>
 
@@ -121,8 +118,8 @@ const Services = () => {
                 textAlign: 'center',
                 borderRadius: '12px',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-                backgroundColor: '#ff9800',
-                color: 'white',
+                border: '4px solid #ff9800',  // Orange border
+                color: 'black',
                 height: '280px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -131,18 +128,18 @@ const Services = () => {
                 '&:hover': {
                   boxShadow: '0 8px 30px rgba(0, 0, 0, 0.2)',
                   transform: 'translateY(-8px)',
-                   cursor:'pointer'
+                  cursor: 'pointer',
                 },
               }}
               onClick={() => handleServiceClick("Renewal SLD")}
             >
-              <IconButton sx={{ color: 'white', fontSize: '40px', marginBottom: '20px' }}>
+              <IconButton sx={{ color: 'black', fontSize: '40px', marginBottom: '20px' }}>
                 <Payment />
               </IconButton>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px', color: 'black' }}>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px' }}>
                 Renewal SLD
               </Typography>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", color: 'white' }} variant="body2">User Submitted: 465</Typography>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif" }} variant="body2">User Submitted: 465</Typography>
             </Paper>
           </Grid>
 
@@ -154,8 +151,8 @@ const Services = () => {
                 textAlign: 'center',
                 borderRadius: '12px',
                 boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
-                backgroundColor: '#f44336',
-                color: 'white',
+                border: '4px solid #f44336',  // Red border
+                color: 'black',
                 height: '280px',
                 display: 'flex',
                 flexDirection: 'column',
@@ -164,18 +161,18 @@ const Services = () => {
                 '&:hover': {
                   boxShadow: '0 8px 30px rgba(0, 0, 0, 0.2)',
                   transform: 'translateY(-8px)',
-                   cursor:'pointer'
+                  cursor: 'pointer',
                 },
               }}
               onClick={() => handleServiceClick("Offline Court Chalan")}
             >
-              <IconButton sx={{ color: 'white', fontSize: '40px', marginBottom: '20px' }}>
+              <IconButton sx={{ color: 'black', fontSize: '40px', marginBottom: '20px' }}>
                 <Gavel />
               </IconButton>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px', color: 'black' }}>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif", marginBottom: '20px', fontWeight: 'bold', fontSize: '20px' }}>
                 Offline Court Chalan
               </Typography>
-              <Typography sx={{ fontFamily: "'Poppins', sans-serif", color: 'white' }} variant="body2">User Submitted: 465</Typography>
+              <Typography sx={{ fontFamily: "'Poppins', sans-serif" }} variant="body2">User Submitted: 465</Typography>
             </Paper>
           </Grid>
         </Grid>

@@ -12,37 +12,57 @@ import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'; // Import the CSS
-
 import { useNavigate } from 'react-router-dom';
-import { Images } from './../images/image';
+import axios from 'axios'; // Import axios
+import { Images } from './../images/image'; // Ensure this is your logo or image component
 
 const defaultTheme = createTheme();
 
 export default function Login() {
-  const [email, setEmail] = useState('');
+  const [adminId, setAdminId] = useState(''); // Correct the state variable name for adminId
   const [password, setPassword] = useState('');
   const navigate = useNavigate(); // Initialize navigate
 
+  // Handle the login logic by making a POST request to your adminLogin API
+  const handleLogin = async (adminId, password) => {
+    try {
+      const response = await axios.post('https://us-central1-courtchallanrto.cloudfunctions.net/api/adminLogin', {
+        adminId,
+        password,
+      });
+      console.log("Login Response Data:", response.data); // Log response data
+
+      // Check if the response contains the token
+      if (response.data.token) {
+        // Store token in localStorage
+        localStorage.setItem('authToken', response.data.token);
+
+        // Set a userLogin flag if needed
+        localStorage.setItem('userlogin', true);
+
+        // Redirect to the dashboard
+        navigate('/dashboard');
+        toast.success("Login successful!");
+      } else {
+        toast.error("Invalid adminId or password!");
+      }
+    } catch (error) {
+      toast.error(" please check adminid and passwrod . Please try again.");
+      console.error(error);
+    }
+  };
+
+  // Handle form submission
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (!email || !password) {
-      toast.error("Email and Password are required!");
+
+    if (!adminId || !password) {
+      toast.error("Admin ID and Password are required!");
       return;
     }
 
-    // Retrieve stored user details from local storage
-    const storedUser = JSON.parse(localStorage.getItem("userDetails"));
-
-    // Check if user exists and credentials match
-    if (storedUser && storedUser.email === email && storedUser.password === password) {
-      localStorage.setItem("userlogin",true)
-      
-      
-      navigate('/dashboard'); 
-      toast.success("Login successful!");
-    } else {
-      toast.error("Invalid email or password!");
-    }
+    // Call the handleLogin method with the form values
+    handleLogin(adminId, password);
   };
 
   return (
@@ -58,7 +78,8 @@ export default function Login() {
             alignItems: 'center',
           }}
         >
-          <Images />
+          {/* Use your image component, assuming Images component is a logo */}
+          <Images />  
           <Typography component="h1" variant="h5">
             Sign in
           </Typography>
@@ -67,13 +88,13 @@ export default function Login() {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
-              autoComplete="email"
+              id="adminId"
+              label="Admin ID"
+              name="adminId"
+              autoComplete="adminId"
               autoFocus
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
+              value={adminId}
+              onChange={(e) => setAdminId(e.target.value)} // Corrected onChange
             />
             <TextField
               margin="normal"
@@ -119,6 +140,7 @@ export default function Login() {
   );
 }
 
+// Copyright component for footer
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
